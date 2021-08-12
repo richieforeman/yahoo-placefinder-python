@@ -28,6 +28,8 @@ def geocode(q=None, flags="JRT", gflags="AC", **kwargs):
     if "J" not in flags:
         flags = flags + "J"
 
+        
+
     uri = _base_uri + "?appid=%s&flags=%s&gflags=%s&%s" % (appid, flags, gflags, urlencode(kwargs))
 
     # yahoo returns a 200 for everything..
